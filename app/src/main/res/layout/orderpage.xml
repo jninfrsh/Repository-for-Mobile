@@ -107,6 +107,7 @@
     </HorizontalScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -128,20 +129,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:orientation="vertical"/>
+            android:orientation="vertical" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="53dp"
-            android:layout_marginBottom="13dp"/>
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/ab"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -158,14 +159,14 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Orders"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="138dp"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/ab"
+            android:text="Orders"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -182,14 +183,14 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cart"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="236dp"
-            android:layout_marginBottom="13dp"/>
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/ab"
+            android:text="Cart"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -206,14 +207,14 @@
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Profile"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="315dp"
-            android:layout_marginBottom="13dp"/>
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/ab"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -228,5 +229,19 @@
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/ab"
+        android:text="Order Details"
+        android:textColor="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

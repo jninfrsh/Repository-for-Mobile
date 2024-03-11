@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Activity.homepage">
+    tools:context=".Activity.homepage2">
 
 
     <TextView
@@ -169,17 +169,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="343dp"
-        android:layout_height="156dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:layout_marginStart="38dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ado" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sis" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/bis" />
+            <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gis" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/chop" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="328dp">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/action_bar"
@@ -190,29 +230,29 @@
             tools:layout_editor_absoluteX="2dp"
             tools:layout_editor_absoluteY="671dp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-            <LinearLayout
-                android:id="@+id/home"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.2"
-                android:orientation="vertical"/>
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical" />
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/ab"
-                    android:textColor="@color/white"
-                    app:layout_anchor="@id/action_bar"
-                    app:layout_anchorGravity="bottom|start"
-                    android:layout_marginStart="53dp"
-                    android:layout_marginBottom="13dp"/>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/ab"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -229,14 +269,14 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Orders"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="138dp"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/ab"
+            android:text="Orders"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -253,14 +293,14 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cart"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="236dp"
-            android:layout_marginBottom="13dp"/>
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/ab"
+            android:text="Cart"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -277,14 +317,14 @@
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Profile"
-            android:textSize="12sp"
-            android:fontFamily="@font/ab"
-            android:textColor="@color/white"
-            app:layout_anchor="@id/action_bar"
-            app:layout_anchorGravity="bottom|start"
             android:layout_marginStart="315dp"
-            android:layout_marginBottom="13dp"/>
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/ab"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_anchor="@id/action_bar"
+            app:layout_anchorGravity="bottom|start" />
 
         <ImageView
             android:id="@+id/imageView6"
